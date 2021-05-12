@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import java.text.DecimalFormat;
 
 public class CurrencyConverter {
 
@@ -49,6 +50,7 @@ public class CurrencyConverter {
     });
   }
 
+  //User input
   public double checkInput(String currencyString){
     double currencyDouble = -1;
     try {
@@ -70,7 +72,7 @@ public class CurrencyConverter {
       return "";
     } else {
       double doubleUsd = Double.parseDouble(usd);
-      return String.valueOf(doubleUsd * 6.11);
+      return String.valueOf(doubleUsd * 0.16);
     }
   }
 
@@ -81,7 +83,7 @@ public class CurrencyConverter {
       return "";
     } else {
       double doubleDkk = Double.parseDouble(dkk);
-      return String.valueOf(doubleDkk * 0.16);
+      return String.valueOf(doubleDkk * 6.11);
     }
   }
 
